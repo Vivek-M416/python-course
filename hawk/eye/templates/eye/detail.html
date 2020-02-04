@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+{% if course.pk is 1 %}
+<h1><a href="https://www.python.org/">{{ course.coursename }}</a></h1>
+<h2>{{ course.insname }}</h2>
+
+{% elif course.pk is 4 %}
+<h1><a href="https://www.djangoproject.com/">{{ course.coursename }}</a></h1>
+<h2>{{ course.insname }}</h2>
+
+{% elif course.pk is 5 %}
+<h1><a href="https://www.youtube.com/watch?v=WmGgxTpGs_8&list=PL9ooVrP1hQOGECN1oA2iXcWFBTRYUxzQG">{{ course.coursename }}</a></h1>
+<h2>{{ course.insname }}</h2>
+
+{% elif course.pk is 6 %}
+<h1><a href="https://github.com/Vivek-M416">{{ course.coursename }}</a></h1>
+<h2>{{ course.insname }}</h2>
+
+{% else %}
+<h1><a href="https://www.django-rest-framework.org/">{{ course.coursename }}</a></h1>
+<h2>{{ course.insname }}</h2>
+
+{% endif %}
